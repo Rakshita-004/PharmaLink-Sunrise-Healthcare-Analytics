@@ -1,52 +1,41 @@
+=# Week 9 – Peer Review Report
 
-# WEEK 9 – DASHBOARD V1 PEER REVIEW
+## Reviewer Information
+Reviewer Name: Kushi
+Review Date: 16 November 2026
+Review Method: Live dashboard demonstration
+Project: Sunrise Healthcare Analytics
 
-## 1. Review Information
+## Peer Evaluation
 
-Reviewer Name:
-Review Date:
-Review Method:
-Dashboard URL:
+### 1. Navigation
+Feedback: The dashboard is organized into different sections making it relatively easy to navigate. The separation of resource utilization, patient satisfaction and appointment analytics helps users find relevant information.
 
-## 2. Heuristic Evaluation
+### 2. KPI Clarity
+Feedback: The KPI cards provide a quick overview of hospital performance. However, some metrics would benefit from additional explanations, including their calculation methods and units.
 
-| Criteria | Actual Peer Feedback |
-|---|---|
-| Navigation | |
-| KPI clarity | |
-| Chart readability | |
-| Filter functionality | |
-| Overall usability | |
+### 3. Chart Readability
+Feedback: The interactive charts provide useful comparisons between departments and specialties. Some chart titles and axis labels could be more descriptive to improve understanding.
 
-## 3. Key Findings
+### 4. Filter Functionality
+Feedback: The hospital and department filters are useful for exploring specific operational data. It would be helpful to provide clearer descriptions of which datasets are affected by each filter.
 
-### Positive Feedback
-1.
-2.
-3.
+### 5. Overall Usability
+Feedback: The dashboard presents healthcare operational information in a structured manner. The combination of KPI cards, interactive charts and analytical insights makes it useful for understanding hospital performance.
 
-### Issues Identified
-1.
-2.
-3.
+## Positive Observations
+1. Clear separation of analytical sections.
+2. Useful interactive visualizations and KPI cards.
 
-## 4. Revision List
+## Issues Identified
+1. Some KPI calculations need clearer explanations.
+2. Certain chart labels could be more descriptive.
+3. Filter descriptions could be improved.
 
-| ID | Issue | Proposed Improvement | Status |
+## Revision List
+
+| ID | Identified Issue | Improvement | Status |
 |---|---|---|---|
-| R1 | | | Pending |
-| R2 | | | Pending |
-| R3 | | | Pending |
-| R4 | | | Pending |
-| R5 | | | Pending |
-
-## 5. Changes Implemented
-
-1.
-2.
-3.
-
-## 6. Conclusion
-
-Summarize the peer's assessment and
-the improvements made to Dashboard V1.
+| R1 | Unclear KPI Definitions | Add KPI descriptions and calculation methods | Pending |
+| R2 | Chart readability | Improve chart titles, labels and units | Pending |
+| R3 | Filter descriptions | Add explanatory text for dashboard filters | Pending |
