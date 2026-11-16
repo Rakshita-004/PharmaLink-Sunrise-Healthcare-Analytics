@@ -1,40 +1,52 @@
 
-# Dashboard V1 – Peer Review Log
+# WEEK 9 – DASHBOARD V1 PEER REVIEW
 
-## Review Information
+## 1. Review Information
 
 Reviewer Name:
 Review Date:
+Review Method:
 Dashboard URL:
 
-## Evaluation Criteria
+## 2. Heuristic Evaluation
 
-| Criteria | Feedback | Status |
-|---|---|---|
-| Dashboard navigation | | Pending |
-| KPI clarity | | Pending |
-| Chart readability | | Pending |
-| Filter functionality | | Pending |
-| Overall usability | | Pending |
+| Criteria | Actual Peer Feedback |
+|---|---|
+| Navigation | |
+| KPI clarity | |
+| Chart readability | |
+| Filter functionality | |
+| Overall usability | |
 
-## Feedback and Suggestions
+## 3. Key Findings
+
+### Positive Feedback
+1.
+2.
+3.
+
+### Issues Identified
+1.
+2.
+3.
+
+## 4. Revision List
+
+| ID | Issue | Proposed Improvement | Status |
+|---|---|---|---|
+| R1 | | | Pending |
+| R2 | | | Pending |
+| R3 | | | Pending |
+| R4 | | | Pending |
+| R5 | | | Pending |
+
+## 5. Changes Implemented
 
 1.
 2.
 3.
 
-## Revision List
+## 6. Conclusion
 
-| Issue Identified | Proposed Improvement | Status |
-|---|---|---|
-| | | Pending |
-| | | Pending |
-| | | Pending |
-
-## Final Review
-
-Overall feedback:
-
-Improvements implemented:
-
-Conclusion:
+Summarize the peer's assessment and
+the improvements made to Dashboard V1.
