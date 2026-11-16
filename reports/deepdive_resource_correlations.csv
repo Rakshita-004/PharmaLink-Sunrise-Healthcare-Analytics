@@ -1,0 +1,5 @@
+variable,outcome,n,spearman_rho,p_value
+doctor_attendance_pct,avg_patient_wait_mins,400,0.029521720770918927,0.5560524878258555
+nurse_attendance_pct,avg_patient_wait_mins,400,-0.010838531046323712,0.8289109030792762
+bed_occupancy_pct,avg_patient_wait_mins,225,0.0547475778021483,0.4137839691053081
+icu_occupancy_pct,avg_patient_wait_mins,225,-0.022491501267393205,0.7372208897844852

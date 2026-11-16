@@ -1,0 +1,2 @@
+model,target,train_rows,test_rows,accuracy,precision,recall,f1,roc_auc,majority_class_baseline_accuracy,note
+Balanced Logistic Regression,no_show,1600,400,0.555,0.18435754189944134,0.5076923076923077,0.27049180327868855,0.5659701492537313,0.8375,Exploratory single stratified 80/20 holdout; not approved for operational decisions.
