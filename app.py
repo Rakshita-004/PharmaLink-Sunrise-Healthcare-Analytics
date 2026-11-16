@@ -47,7 +47,13 @@ if selected_department != "All":
     rf = rf[rf.department == selected_department]
     sf = sf[sf.department == selected_department]
 
-tab1, tab2, tab3, tab4 = st.tabs(["Executive overview", "Resource utilisation", "Patient satisfaction", "Appointments"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    "Executive overview",
+    "Resource utilisation",
+    "Patient satisfaction",
+    "Appointments",
+    "Deep-dive insights"
+])
 
 with tab1:
     st.subheader("Executive overview")
@@ -126,6 +132,104 @@ with tab4:
     st.plotly_chart(px.bar(specialty.sort_values("no_show_rate",ascending=False),x="specialty",y="no_show_rate",title="No-show rate by specialty",labels={"no_show_rate":"No-show rate"}),use_container_width=True)
     st.markdown("#### Appointment data")
     st.dataframe(a.head(100),use_container_width=True,hide_index=True)
+
+
+with tab5:
+    st.subheader("Deep-dive Insights")
+    st.caption(
+        "Explore hospital performance, patient satisfaction "
+        "and appointment attendance patterns."
+    )
+
+    # Satisfaction by department
+    st.markdown("### Patient satisfaction by department")
+
+    satisfaction_dept = sf.groupby(
+        "department", as_index=False
+    ).agg(
+        mean_satisfaction=("overall_satisfaction", "mean"),
+        survey_count=("survey_id", "count"),
+        mean_wait=("waiting_time_mins", "mean")
+    ).sort_values("mean_satisfaction")
+
+    st.plotly_chart(
+        px.bar(
+            satisfaction_dept,
+            x="department",
+            y="mean_satisfaction",
+            hover_data=["survey_count", "mean_wait"],
+            title="Average Satisfaction by Department",
+            labels={
+                "mean_satisfaction": "Satisfaction (out of 5)"
+            }
+        ),
+        use_container_width=True
+    )
+
+    # Appointment no-show segmentation
+    st.markdown("### Appointment no-show analysis")
+
+    specialty_analysis = a.groupby(
+        "specialty", as_index=False
+    ).agg(
+        appointments=("appointment_id", "count"),
+        no_show_rate=("no_show", "mean")
+    ).sort_values("no_show_rate", ascending=False)
+
+    st.plotly_chart(
+        px.bar(
+            specialty_analysis,
+            x="specialty",
+            y="no_show_rate",
+            hover_data=["appointments"],
+            title="No-show Rate by Specialty",
+            labels={"no_show_rate": "No-show rate"}
+        ),
+        use_container_width=True
+    )
+
+    # Resource waiting time
+    st.markdown("### Resource performance by department")
+
+    resource_analysis = rf.groupby(
+        "department", as_index=False
+    ).agg(
+        mean_wait=("avg_patient_wait_mins", "mean"),
+        doctor_attendance=("doctor_attendance_pct", "mean"),
+        nurse_attendance=("nurse_attendance_pct", "mean")
+    ).sort_values("mean_wait", ascending=False)
+
+    st.plotly_chart(
+        px.bar(
+            resource_analysis,
+            x="department",
+            y="mean_wait",
+            hover_data=[
+                "doctor_attendance",
+                "nurse_attendance"
+            ],
+            title="Average Waiting Time by Department"
+        ),
+        use_container_width=True
+    )
+
+    # KPI definitions
+    st.markdown("### KPI definitions")
+
+    definitions = pd.DataFrame([
+        ["Bed occupancy", "Occupied beds / Total beds × 100"],
+        ["ICU occupancy", "Occupied ICU beds / Total ICU beds × 100"],
+        ["No-show rate", "No-show appointments / Total appointments × 100"],
+        ["Patient satisfaction", "Mean overall satisfaction rating"],
+        ["Average waiting time", "Mean recorded waiting time"]
+    ], columns=["KPI", "Calculation"])
+
+    st.dataframe(
+        definitions,
+        use_container_width=True,
+        hide_index=True
+    )
+
 
 st.divider()
 st.caption("Prepared for the adapted PharmaLink internship project | Source: supplied Sunrise CSV datasets | Analysis is descriptive and does not establish causation.")

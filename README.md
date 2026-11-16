@@ -44,3 +44,46 @@ git init
 git add .
 git commit -m "Week 3 data pipeline and baseline metrics"
 ```
+
+## Week 9 – Dashboard V1 and Peer Review
+
+### Dashboard Features
+
+1. Executive Overview
+2. Resource Utilisation
+3. Patient Satisfaction
+4. Appointment Analytics
+5. Deep-dive Insights
+
+### Interactive Features
+- Hospital and department filters
+- KPI cards and operational metrics
+- Interactive Plotly visualizations
+- Department-level comparisons
+- Appointment no-show segmentation
+- Data quality warnings
+
+### Technology Stack
+- Python
+- Streamlit
+- Pandas
+- Plotly
+- NumPy
+
+### Dashboard Execution
+
+Run the application using:
+
+```bash
+python -m streamlit run app.py
+```
+
+### Peer Review
+The dashboard will undergo heuristic evaluation covering:
+- Navigation and usability
+- KPI clarity
+- Chart readability
+- Filter functionality
+- Data reliability
+
+Peer feedback and revisions will be documented separately.
