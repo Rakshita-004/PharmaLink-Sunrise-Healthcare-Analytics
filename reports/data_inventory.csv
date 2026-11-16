@@ -1,0 +1,4 @@
+file_name,row_count,column_count,date_start,date_end,missing_value_count,contents,analytical_use
+sunrise_resource_utilisation.csv,400,14,2023-01-03,2024-12-29,0,"Hospital, department, daily resource and staffing metrics",Capacity and operational performance
+sunrise_patient_satisfaction.csv,600,13,2023-01-01,2024-12-30,163,"Survey ratings, wait time, recommendation and optional comments",Patient experience and service quality
+da_healthcare_appointments.csv,2000,15,2025-01-01,2026-01-12,0,"Appointment bookings, attendance, wait and consultation metrics",Appointment access and no-show analysis

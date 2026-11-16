@@ -1,0 +1,14 @@
+{
+  "resource_rows": 400,
+  "satisfaction_rows": 600,
+  "appointment_rows": 2000,
+  "resource_duplicate_rows": 0,
+  "satisfaction_duplicate_rows": 0,
+  "appointment_duplicate_rows": 0,
+  "resource_invalid_bed_capacity": 175,
+  "resource_invalid_icu_capacity": 175,
+  "resource_invalid_surgery_counts": 182,
+  "satisfaction_missing_feedback_comments": 163,
+  "appointment_missing_values": 0,
+  "appointment_hospital_identifier_available": false
+}

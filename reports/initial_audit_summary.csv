@@ -1,0 +1,9 @@
+metric,value
+resource_rows,400.0
+satisfaction_rows,600.0
+appointment_rows,2000.0
+resource_invalid_bed_capacity,175.0
+resource_invalid_icu_capacity,175.0
+resource_invalid_surgery_counts,182.0
+appointment_no_show_rate_pct,16.2
+satisfaction_missing_feedback_comments,163.0

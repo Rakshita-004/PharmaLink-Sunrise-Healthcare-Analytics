@@ -1,0 +1,17 @@
+metric,value,unit,definition
+Resource records,400.0,records,All resource records
+Mean doctor attendance,84.95,%,Mean across resource records
+Mean nurse attendance,87.42,%,Mean across resource records
+Mean resource waiting time,78.66,minutes,Mean across resource records
+Invalid bed-capacity records,175.0,records,Occupied beds > total beds or invalid denominator
+Invalid ICU-capacity records,175.0,records,Occupied ICU beds > total ICU beds or invalid denominator
+Invalid surgery-count records,182.0,records,Completed surgeries > scheduled surgeries or negative counts
+Patient survey records,600.0,records,All survey records
+Mean overall satisfaction,3.045,out of 5,Mean survey rating
+Mean survey waiting time,91.43,minutes,Mean reported survey wait
+Missing feedback comments,163.0,comments,Optional free-text feedback blank
+Appointment records,2000.0,records,All appointment records
+Appointment no-shows,324.0,records,no_show = 1
+Appointment no-show rate,16.2,%,No-shows / all appointment records
+Mean appointment waiting time,35.23,minutes,Mean recorded appointment wait
+Mean attended consultation duration,25.34,minutes,Mean consultation duration among attended appointments
